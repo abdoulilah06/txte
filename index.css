@@ -1,0 +1,98 @@
+body{
+    background-image: url('../freelance/image/wallpapersden.com_lake-tekapo-new-zealand_1366x768.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+nav{
+    background-color: cadetblue;
+    padding: 30px 25px;
+
+}
+ul{
+    position: absolute;
+    text-align: right;
+    right: 100px;
+    top: 13px;
+    transition: 0.4s;
+
+    
+    
+}
+.niv{
+    
+    padding: 10px 20px;
+    background-color: azure;
+    text-decoration: none;
+    font-size:  19px;
+    color: black;
+    font-weight: 500;
+}
+.niv:hover{
+    background-color: black;
+    color: white;
+}
+.logo{
+    width: 55px;
+    position: absolute;
+    top: 10px;
+}
+.menu{
+    position: absolute;
+    width: 40px;
+    top: 19px;
+    right: 40px;
+    cursor: pointer;
+    transition: 0.4s;
+}
+.on{
+    display: none;
+    transition: 0.4s;
+    margin-right: 100px;
+
+}
+.active{
+    transform: rotate(90deg);
+    transition: 0.4s;
+}
+@media screen and (max-width:500px){
+    ul{
+        position: absolute;
+        top: 52px;
+        backdrop-filter:blur(7px);
+        background-color: rgba(127, 255, 212, 0.5);
+        border-radius: 10px;
+        width: 100px;
+        height: 190px;
+        right: 8px;
+        flex-direction: column;
+
+    }
+    body{
+        background-size: auto;
+    }
+    .niv{
+        background-color: transparent;
+        color: white;
+        padding: 10px;
+        display: flex;
+        
+        
+    }
+    .niv:hover{
+        background-color: white;
+        color: black;
+    }
+    nav{
+        border-radius: 10px;
+    }
+    .logo{
+        width: 55px;
+        left: 10px;
+    }
+    .menu{
+        position: absolute;
+        top: 19px;
+        right: 20px;
+
+    }
+}
